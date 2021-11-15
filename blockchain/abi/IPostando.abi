@@ -1,0 +1,135 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_draftId",
+				"type": "uint256"
+			}
+		],
+		"name": "deleteDraft",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "deleted",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "msgRef",
+				"type": "address"
+			}
+		],
+		"name": "deleteMail",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "_deleted",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_draftId",
+				"type": "uint256"
+			}
+		],
+		"name": "retrieveDraft",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "_ipfsMsgDraftLocation",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_ipfsMsgDraftLocation",
+				"type": "string"
+			}
+		],
+		"name": "saveDraft",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "_draftId",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_msgSubject",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_pouchErc20",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_pouchAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_ipfsMessage",
+				"type": "string"
+			},
+			{
+				"internalType": "string[]",
+				"name": "_ipfsAttachments",
+				"type": "string[]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_draftId",
+				"type": "uint256"
+			}
+		],
+		"name": "sendMail",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "_msgRef",
+				"type": "address"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "viewMail",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "_msgRef",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

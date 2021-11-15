@@ -1,0 +1,54 @@
+[
+	{
+		"inputs": [],
+		"name": "getAttachments",
+		"outputs": [
+			{
+				"internalType": "string[]",
+				"name": "_ipfsReferences",
+				"type": "string[]"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getMessageRef",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "_ipfsReference",
+				"type": "string"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getPouch",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "_pouchAddress",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getSubject",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "_subject",
+				"type": "string"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
